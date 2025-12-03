@@ -1,34 +1,21 @@
 package com.example.mymarketapp
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.navigation.findNavController
+import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.mymarketapp.databinding.FragmentWelcomeBinding
 
-class WelcomeFragment : Fragment() {
+class WelcomeFragment : Fragment(R.layout.fragment_welcome) {
 
-    private lateinit var binding: FragmentWelcomeBinding
+    private var _binding: FragmentWelcomeBinding? = null
+    private val binding get() = _binding!!
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        _binding = FragmentWelcomeBinding.bind(view)
 
-        binding = FragmentWelcomeBinding.inflate(inflater, container, false)
-
-        // Navigate to Login Fragment
-        binding.btnLogin.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_welcomeFragment_to_loginFragment)
+        binding.btnContinue.setOnClickListener {
+            findNavController().navigate(R.id.action_welcome_to_login)
         }
-
-        // Navigate to Signup Fragment
-        binding.btnSignUp.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_welcomeFragment_to_signupFragment)
-        }
-
-        return binding.root
     }
 }
