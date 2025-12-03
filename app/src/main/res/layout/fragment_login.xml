@@ -1,56 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp"
     android:gravity="center"
-    android:background="#FFFFFF">
+    android:padding="25dp"
+    android:background="#000"
+  >
 
-    <!-- Heading -->
-    <TextView
-        android:id="@+id/tvSignupTitle"
+    <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="login"
-        android:background="#2A7A27"
-        android:backgroundTint="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="#F9A825"
-        android:layout_marginBottom="24dp" />
+        android:layout_marginBottom="25dp"
+        android:text="@string/login"
+        android:textColor="#952D52"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
 
-    <!-- Username -->
-    <EditText
-        android:id="@+id/etUsername"
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Username"
-        android:inputType="textPersonName"
-        android:padding="12dp"
-        android:background="@android:drawable/edit_text"
-        android:layout_marginBottom="16dp" />
+        android:hint="@string/enter_your_email"
+        android:textColorHint="#F5333030"
+        android:textColor="#fff"
+       />
 
-    <!-- Password -->
-    <EditText
+    <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password"
+        android:hint="@string/enter_your_password"
+        android:textColorHint="#F5333030"
+        android:textColor="#fff"
         android:inputType="textPassword"
-        android:padding="12dp"
-        android:background="@android:drawable/edit_text"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginTop="10dp"/>
 
-    <Button
-        android:id="@+id/btnSignup"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="login"
-        android:textAllCaps="false"
-        android:padding="12dp"
-        android:backgroundTint="#3F51B5"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="10dp" />
-
-</LinearLayout>
+        android:text="@string/login"
+        android:textColor="#F9A825"
+        android:layout_marginTop="20dp"
+       />
+</androidx.appcompat.widget.LinearLayoutCompat>
