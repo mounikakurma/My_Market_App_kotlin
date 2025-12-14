@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.example.mymarketapp.SplashFragment"
+        android:name="com.example.mymarketapp.view.splash.SplashFragment"
         android:label="Splash"
         tools:layout="@layout/fragment_splash">
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="com.example.mymarketapp.WelcomeFragment"
+        android:name="com.example.mymarketapp.view.splash.WelcomeFragment"
         android:label="Welcome"
         tools:layout="@layout/fragment_welcome">
         <action
@@ -27,12 +27,16 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.mymarketapp.LoginFragment"
+        android:name="com.example.mymarketapp.view.login.LoginFragment"
         android:label="Login"
-        tools:layout="@layout/fragment_login"/>
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+    </fragment>
     <fragment
         android:id="@+id/signupFragment"
         android:name="com.example.mymarketapp.SignupFragment"
         android:label="SignupFragment"
-        tools:layout="@layout/fragment_signup"/>
+        tools:layout="@layout/fragment_register"/>
 </navigation>

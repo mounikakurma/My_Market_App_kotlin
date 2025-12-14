@@ -1,48 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:gravity="center"
-    android:padding="25dp"
-    android:background="#000"
-  >
+    android:orientation="vertical"
+    android:padding="24dp">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
-        android:text="@string/login"
-        android:textColor="#952D52"
+        android:layout_marginBottom="24dp"
+        android:text="Login"
         android:textSize="26sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
+
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/enter_your_email"
-        android:textColorHint="#F5333030"
-        android:textColor="#fff"
-       />
+        android:inputType="textEmailAddress"
+        android:textColorHint="#333232"
+        android:background="@drawable/shape_rect_rounded_edit_text"
+        android:padding="20dp"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/emailErrorTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="email Error"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#400C0C"
+        android:padding="20dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        />
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/enter_your_password"
-        android:textColorHint="#F5333030"
-        android:textColor="#fff"
         android:inputType="textPassword"
-        android:layout_marginTop="10dp"/>
+        android:textColorHint="#333232"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape_rect_rounded_edit_text"
+        android:padding="15dp"
+
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/passwordErrorTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="password Error"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#400C0C"
+        android:padding="20dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        />
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/login"
-        android:textColor="#F9A825"
-        android:layout_marginTop="20dp"
-       />
+        android:layout_marginTop="50dp"
+        android:text="Login"
+        android:background="#1565C0"
+        android:textColor="@color/white"
+        />
+
 </androidx.appcompat.widget.LinearLayoutCompat>

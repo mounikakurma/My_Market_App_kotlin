@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyMarketApp">
         <activity
-            android:name=".MainActivity"
+            android:name=".view.onboarding.OnboardingActivity"
             android:exported="true">
 
             <intent-filter>

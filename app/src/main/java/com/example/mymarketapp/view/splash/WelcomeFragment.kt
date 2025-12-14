@@ -1,9 +1,10 @@
-package com.example.mymarketapp
+package com.example.mymarketapp.view.splash
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.mymarketapp.R
 import com.example.mymarketapp.databinding.FragmentWelcomeBinding
 
 class WelcomeFragment : Fragment(R.layout.fragment_welcome) {

@@ -1,10 +1,11 @@
-package com.example.mymarketapp
+package com.example.mymarketapp.view.splash
 
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.mymarketapp.R
 import com.example.mymarketapp.databinding.FragmentSplashBinding
 
 class SplashFragment : Fragment(R.layout.fragment_splash) {
