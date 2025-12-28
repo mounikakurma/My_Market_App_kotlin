@@ -34,8 +34,8 @@
         android:text="email Error"
         android:textSize="14sp"
         android:layout_marginTop="5dp"
-        android:textColor="#400C0C"
-        android:padding="20dp"
+        android:textColor="#FA0707"
+        android:paddingVertical="10dp"
         android:visibility="gone"
         tools:visibility="visible"
         />
@@ -59,8 +59,8 @@
         android:text="password Error"
         android:textSize="14sp"
         android:layout_marginTop="5dp"
-        android:textColor="#400C0C"
-        android:padding="20dp"
+        android:textColor="#FB0404"
+        android:paddingVertical="10dp"
         android:visibility="gone"
         tools:visibility="visible"
         />
