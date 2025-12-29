@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyMarketApp">
         <activity
-            android:name=".view.dashboard.DashboardActivity"
+            android:name=".view.dashboard.activity.DashboardActivity"
             android:exported="false" />
         <activity
             android:name=".view.onboarding.OnboardingActivity"

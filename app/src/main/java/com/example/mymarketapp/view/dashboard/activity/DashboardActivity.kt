@@ -1,4 +1,4 @@
-package com.example.mymarketapp.view.dashboard
+package com.example.mymarketapp.view.dashboard.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

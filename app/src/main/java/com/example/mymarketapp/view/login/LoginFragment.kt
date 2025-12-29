@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.mymarketapp.R
 import com.example.mymarketapp.databinding.FragmentLoginBinding
-import com.example.mymarketapp.view.dashboard.DashboardActivity
+import com.example.mymarketapp.view.dashboard.activity.DashboardActivity
 
 class LoginFragment : Fragment(R.layout.fragment_login) {
 
