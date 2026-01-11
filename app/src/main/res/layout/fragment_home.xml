@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.home.fragment.HomeFragment">
+    android:background="#4E8A75"
+    >
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
 
-</FrameLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
